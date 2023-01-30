@@ -11,10 +11,11 @@ Significant constants
  3. Computations:
          
  4. The outputs are
-         Zakat amount
+         zakat amount
 """
 #functions definitions
 def main():
+        print('unsakkhonsuay')
         #code goes her
         
                 
