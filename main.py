@@ -14,12 +14,12 @@ Significant constants
          multiplication: number * another number
          division: number / another number
  4. The outputs are
-         computation result
+         zakat amount
 """
 #functions definitions
 def main():
         #code goes her
         
                 
-if __name__ == "__main__":
+ if __name__ == "__main__":
          main()
