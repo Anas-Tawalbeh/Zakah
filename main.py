@@ -22,5 +22,5 @@ def main():
         #code goes her
         
                 
- if __name__ == "__main__":
+if __name__ == "__main__":
          main()
