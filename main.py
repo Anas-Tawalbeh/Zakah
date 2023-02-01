@@ -46,7 +46,7 @@ while True:
     # take input from the user
     choice = input("Enter option: ")
 
-    # check if choice is one of the four options
+    # check if choice is one of the three options
     if choice in ('cash', 'gold', 'silver'):
         try:
             num1 = float(input("Enter the number: "))
