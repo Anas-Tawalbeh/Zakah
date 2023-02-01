@@ -16,11 +16,16 @@ Significant constants
  4. The outputs are
          zakat amount
 """
+zakat = input("Type of wealt: Cash, Gold,Plantation:")
+cash = float(input("Enter the number of money"))
+gold = float(input("Enter the number of gold(kg):"))
+plantation = float(input("Enter the number:"))
+
 #functions definitions
 def main():
-        print('test')
+        
         #code goes her
         
                 
- if __name__ == "__main__":
-         main()
+if __name__ == "__main__":
+        main()
