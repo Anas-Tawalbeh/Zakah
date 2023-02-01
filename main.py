@@ -9,23 +9,23 @@ Significant constants
          Type of wealth
          Amount of wealth
  3. Computations:
-         addition: number + another number
-         subtraction: number - another number
-         multiplication: number * another number
-         division: number / another number
+         
  4. The outputs are
          zakat amount
 """
 zakat = input("Type of wealt: Cash, Gold,Plantation:")
 cash = float(input("Enter the number of money"))
 gold = float(input("Enter the number of gold(kg):"))
-plantation = float(input("Enter the number:"))
+silver = float(input ("Enter the number of silver: "))
+
+
+print(zakat)
 
 #functions definitions
-def main():
-        
+#def main():
+        #print()   
         #code goes her
         
                 
-if __name__ == "__main__":
-        main()
+#if __name__ == "__main__":
+        #main()
