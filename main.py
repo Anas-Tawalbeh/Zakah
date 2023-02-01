@@ -9,10 +9,7 @@ Significant constants
          Type of wealth
          Amount of wealth
  3. Computations:
-         addition: number + another number
-         subtraction: number - another number
-         multiplication: number * another number
-         division: number / another number
+         
  4. The outputs are
          zakat amount
 """
