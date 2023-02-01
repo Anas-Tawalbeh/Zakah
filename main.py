@@ -13,13 +13,26 @@ Significant constants
  4. The outputs are
          zakat amount
 """
+zakat = input("Type of wealt: Cash, Gold,Plantation:")
+cash = float(input("Enter the number of money"))
+gold = float(input("Enter the number of gold(kg):"))
+silver = float(input ("Enter the number of silver: "))
+
+
+print(zakat)
+
 #functions definitions
 #def main():
+<<<<<<< HEAD
         #print('something')
+=======
+        #print()   
+>>>>>>> 8ffe6ac310b457302c86c69c6242bbc5990cbf81
         #code goes her
 
                 
 #if __name__ == "__main__":
+<<<<<<< HEAD
          #main()
 
 
@@ -46,3 +59,6 @@ while True:
 
         if choice == 'cash':
             print(num1*2.5/100)
+=======
+        #main()
+>>>>>>> 8ffe6ac310b457302c86c69c6242bbc5990cbf81
