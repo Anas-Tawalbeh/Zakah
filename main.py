@@ -15,7 +15,7 @@ Significant constants
 """
 while True:
     try:
-        x = input("select the operator (cash,Gold,Silver,Agrichulture): ")
+        x = input("select the type (cash,Gold,Silver,Agrichulture): ")
         number1 = float(input("Input  the number:"))     #we need to put 'int' before the code if u dont put the result will be string not numeric ex '5'+'5'=55 not 10    
     except ValueError:
         print("Pleas enter the correct value")
@@ -37,14 +37,14 @@ while True:
         print("Cannot devide by zero")
 
 # check if user wants another calculation
-    # break the while loop if answer is no
+# break the while loop if answer is no
     next_calculation = input("Do you want to calculate again? (yes/no): ")
     if next_calculation == "no":
         break
     else:
         print("Welcom")
 #functions definitions
-#def main():
+def main():
 #print('something')
 #print()   
 #if __name__ == "__main__":
