@@ -24,11 +24,14 @@ while True:
         continue
 
     try:
-    #calculate 
-        if x=='cash'>='150000':
-            print(number1*2.5/100)
-        elif "cash"<="150000":
-         print("U didn't need to pay")
+     #calculate 
+        if x=='cash': 
+            if number1>=150000:
+                print(number1*2.5/100)
+            else:
+                print("you don't have to pay zakat, but donations are recommend")
+        else:
+         print("U might try later after we update our code ;)")
         elif x == 'gold'>='85':
             print(number1*2.5/100)
         elif x == 'silver'>='85':
