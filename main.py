@@ -44,7 +44,7 @@ while True:
     else:
         print("Welcome")
 #functions definitions
-def main():
+#def main():
 #print('something')
 #print()   
 #if __name__ == "__main__":
