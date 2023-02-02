@@ -25,13 +25,22 @@ while True:
         continue
 
     try:
-    #calculate 
-        if x == 'cash':
-            if number1 >= 150000:
+     #calculate 
+        if x=='cash': 
+            if number1>=150000:
                 print(number1*2.5/100)
             else:
-                print("u dont need to pay zakat")
-        elif x == 'gold':
+                print("you don't have to pay zakat, but donations are recommend")
+        else:
+         print("U might try later after we update our code ;)")
+        elif x == 'gold'>='85':
+            print(number1*2.5/100)
+        elif x == 'silver'>='85':
+            print(number1*2.5/100)
+    except ZeroDivisionError:
+        print("Cannot devide by zero")
+    # dont need to pay zakat")
+       elif x == 'gold':
             if number1 >= 85:
                 print(number1*2.5/100)
             else:
@@ -46,7 +55,6 @@ while True:
             print("u might try later")
     except:
         print("qwe")
-
 
 # check if user wants another calculation
 # break the while loop if answer is no
