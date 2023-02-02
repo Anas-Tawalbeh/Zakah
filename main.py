@@ -13,6 +13,40 @@ Significant constants
  4. The outputs are
          zakat amount
 """
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 while True:
     try:
         x = input("select the operator (cash,Gold,Silver,Agrichulture): ")
