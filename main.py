@@ -13,6 +13,7 @@ Significant constants
  4. The outputs are
          zakat amount
 """
+#functions definitions
 while True:
     try:
         x = input("select the type (cash,Gold,Silver,Agrichulture): ")
