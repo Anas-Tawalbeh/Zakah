@@ -13,9 +13,10 @@ Significant constants
  4. The outputs are
          zakat amount
 """
+#functions definitions
 while True:
     try:
-        x = input("select the operator (cash,Gold,Silver,Agrichulture): ")
+        x = input("select the type (cash,Gold,Silver): ")
         number1 = float(input("Input  the number:"))     #we need to put 'int' before the code if u dont put the result will be string not numeric ex '5'+'5'=55 not 10    
     except ValueError:
         print("Pleas enter the correct value")
@@ -38,14 +39,30 @@ while True:
             print(number1*2.5/100)
     except ZeroDivisionError:
         print("Cannot devide by zero")
+    # dont need to pay zakat")
+       elif x == 'gold':
+            if number1 >= 85:
+                print(number1*2.5/100)
+            else:
+                print('u dont need to pay zakat')
+        elif x == 'silver':
+            if number1 >= 595:
+                print(number1*2.5/100)
+            else:
+                print('u dont need to pay zakat')
+
+        else:
+            print("u might try later")
+    except:
+        print("qwe")
 
 # check if user wants another calculation
-    # break the while loop if answer is no
+# break the while loop if answer is no
     next_calculation = input("Do you want to calculate again? (yes/no): ")
     if next_calculation == "no":
         break
     else:
-        print("Welcom")
+        print("Welcome")
 #functions definitions
 #def main():
 #print('something')
