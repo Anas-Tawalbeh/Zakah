@@ -42,7 +42,7 @@ while True:
     if next_calculation == "no":
         break
     else:
-        print("Welcom")
+        print("Welcome")
 #functions definitions
 def main():
 #print('something')
