@@ -25,14 +25,14 @@ while True:
 
     try:
     #calculate 
-        if x=='cash'>='150000':
+        if x=='cash'and number1>='150000':
             print(number1*2.5/100)
-        elif "cash"<="150000":
-         print("U didn't need to pay")
-        elif x == 'gold'>='85':
+            else:
+                print(" U didn't need to pay")
+        if x == 'gold'>='85':
             print(number1*2.5/100)
-        elif x == 'silver'>='85':
-            print(number1*2.5/100)
+        elif x == 'silver'>='595':
+            print(number1*2.5/100)    
     except ZeroDivisionError:
         print("Cannot devide by zero")
 
@@ -42,10 +42,11 @@ while True:
     if next_calculation == "no":
         break
     else:
-        print("Welcom")
+        print("Welcome")
 #functions definitions
 def main():
-#print('something')
+
+    print('something')
 #print()   
-#if __name__ == "__main__":
-#main()
+if __name__ == "__main__":
+    main()
