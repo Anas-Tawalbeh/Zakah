@@ -13,48 +13,39 @@ Significant constants
  4. The outputs are
          zakat amount
 """
-zakat = input("Type of wealt: Cash, Gold,Plantation:")
-cash = float(input("Enter the number of money"))
-gold = float(input("Enter the number of gold(kg):"))
-silver = float(input ("Enter the number of silver: "))
+while True:
+    try:
+        x = input("select the operator (cash,Gold,Silver,Agrichulture): ")
+        number1 = float(input("Input  the number:"))     #we need to put 'int' before the code if u dont put the result will be string not numeric ex '5'+'5'=55 not 10    
+    except ValueError:
+        print("Pleas enter the correct value")
+    except NameError:
+        print("Please Enter the correct selection")
+        continue
 
+    try:
+    #calculate 
+        if x=='cash'>='150000':
+            print(number1*2.5/100)
+        elif "cash"<="150000":
+         print("U didn't need to pay")
+        elif x == 'gold'>='85':
+            print(number1*2.5/100)
+        elif x == 'silver'>='85':
+            print(number1*2.5/100)
+    except ZeroDivisionError:
+        print("Cannot devide by zero")
 
-print(zakat)
-
+# check if user wants another calculation
+    # break the while loop if answer is no
+    next_calculation = input("Do you want to calculate again? (yes/no): ")
+    if next_calculation == "no":
+        break
+    else:
+        print("Welcom")
 #functions definitions
 #def main():
-#<<<<<<< HEAD
-        #print('something')
-#=======
-        #print()   
-#>>>>>>> 8ffe6ac310b457302c86c69c6242bbc5990cbf81
-        #code goes her
-
-                
+#print('something')
+#print()   
 #if __name__ == "__main__":
-         #main()
-
-
-print("Select choice.")
-print("cash")
-print("gold")
-print("silver")
-
-"cash" >= 200000
-
-while True:
-    # take input from the user
-    choice = input("Enter option: ")
-
-    # check if choice is one of the three options
-    if choice in ('cash', 'gold', 'silver'):
-        try:
-            num1 = float(input("Enter the number: "))
-        except ValueError:
-            print("Invalid input. Please enter the number!!")
-        
-        except:
-            print("Can not calculate!! Please check your data.")
-
-        if choice == 'cash':
-            print(num1*2.5/100)
+#main()
