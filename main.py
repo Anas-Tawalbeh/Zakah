@@ -16,7 +16,7 @@ Significant constants
 #functions definitions
 while True:
     try:
-        x = input("select the type (cash,Gold,Silver,Agrichulture): ")
+        x = input("select the type (cash,Gold,Silver): ")
         number1 = float(input("Input  the number:"))     #we need to put 'int' before the code if u dont put the result will be string not numeric ex '5'+'5'=55 not 10    
     except ValueError:
         print("Pleas enter the correct value")
@@ -26,16 +26,27 @@ while True:
 
     try:
     #calculate 
-        if x == cash >= 150000:
-            print(number1*2.5/100)
-        elif x == 'cash'<"150000":
-            print("U didn't need to pay")
-        elif x == 'gold'>='85':
-            print(number1*2.5/100)
-        elif x == 'silver'>='85':
-            print(number1*2.5/100)
-    except ZeroDivisionError:
-        print("Cannot devide by zero")
+        if x == 'cash':
+            if number1 >= 150000:
+                print(number1*2.5/100)
+            else:
+                print("u dont need to pay zakat")
+        elif x == 'gold':
+            if number1 >= 85:
+                print(number1*2.5/100)
+            else:
+                print('u dont need to pay zakat')
+        elif x == 'silver':
+            if number1 >= 595:
+                print(number1*2.5/100)
+            else:
+                print('u dont need to pay zakat')
+
+        else:
+            print("u might try later")
+    except:
+        print("qwe")
+
 
 # check if user wants another calculation
 # break the while loop if answer is no
