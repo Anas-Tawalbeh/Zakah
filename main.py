@@ -14,38 +14,50 @@ Significant constants
          zakat amount
 """
 #functions definitions
+
 while True:
     try:
-        x = input("select the type (cash,Gold,Silver): ")
+        x = input("select the type (cash,Gold,Silver, Plantation): ")
+        if x=="Plantation":
+            print("select the option: ")
+            print("1.water the plant by your self")
+            print('2. use rain for water the plant')
+            d= print (input("Please choose this option 1 or 2: "))  
+        else:
+            print("Please choose 1 or 2")  
         number1 = float(input("Input  the number:"))     #we need to put 'int' before the code if u dont put the result will be string not numeric ex '5'+'5'=55 not 10    
     except ValueError:
         print("Pleas enter the correct value")
-    except NameError:
-        print("Please Enter the correct selection")
+
         continue
 
-    try:
      #calculate 
-        if x=='cash': 
-            if number1>=150000:
-                print(number1*2.5/100)
-            else:
-                print("you don't have to pay zakat, but donations are recommend")
-        
-        elif x == 'gold':
-            if number1 >= 85:
-                print(number1*2.5/100)
-            else:
-                print('u dont need to pay zakat')
-        elif x == 'silver':
-            if number1 >= 595:
-                print(number1*2.5/100)
-            else:
-                print('u dont need to pay zakat')
+    if x=='cash': 
+        if number1>=150000:
+            print(number1*2.5/100)
         else:
-            print("u might try later")  
-    except:
-        print("dont need to pay zakat")
+            print("you don't have to pay zakat, but donations are recommend")
+    elif x == 'gold':
+        if number1 >= 85:
+            print(number1*2.5/100)
+        else:
+            print('u dont need to pay zakat')
+    elif x == 'silver':
+        if number1 >= 595:
+            print(number1*2.5/100)
+        else:
+            print('u dont need to pay zakat')
+    elif d =='1':
+        if number1>=653:
+            if d=="1":
+                print(number1*5/100)
+            elif d=='2':
+                print(number1*10/100)
+        else:
+            print("U dont need to pay zakat")     
+    else:
+        print("u might try later")  
+   
     # dont need to pay zakat")
        
     
