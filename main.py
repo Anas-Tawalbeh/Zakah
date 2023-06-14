@@ -16,9 +16,10 @@ Significant constants
 #functions definitions
 
 while True:
-    x = input("select the type (cash,Gold,Silver, Plantation): ")
+    x =  input("select the type (cash,Gold,Silver, Plantation): ")
+       
     try:
-        number1 = float(input("Input  the number:"))     #we need to put 'int' before the code if u dont put the result will be string not numeric ex '5'+'5'=55 not 10    
+        number1 = float(input("Input  the amount:"))     #we need to put 'int' before the code if u dont put the result will be string not numeric ex '5'+'5'=55 not 10    
     except ValueError:
         print("Pleas enter the correct value")
         continue
@@ -29,12 +30,12 @@ while True:
             print(number1*2.5/100)
         else:
             print("you don't have to pay zakat, but donations are recommend")
-    elif x.upper() == 'GOLD':
+    elif x.upper() == 'GOLD':            #โค้ดupperและlowerมีไว้เพื่อให้สรุปว่าuserจะพิมพ์ตัวเอล็กหรือใหญ่ ก็ยังสามารถรันต่อได้
         if number1 >= 85:
             print(number1*2.5/100)
         else:
             print('u dont need to pay zakat')
-    elif x.lower() == 'silver':
+    elif x.lower() == 'silver': 
         if number1 >= 595:
             print(number1*2.5/100)
         else:
@@ -45,12 +46,14 @@ while True:
             2. use rain for water the plant""")
             if d =='1':
                 if number1>=653:
-                    #calculation for crops Zakat
-                    print("calculation for crops Zakat")
+                    print(number1*5/100)
+                    #calculation for crops Zakat 
+                    
                 else:
                     print("U dont need to pay zakat")
             elif d=='2':
                 if number1>=653:
+                    print(number1*10/100)
                     #calculation for crops Zakat
                     print("calculation for crops Zakat")
                 else:
@@ -58,7 +61,7 @@ while True:
             else:
                 print("Choose between 1 or 2")
     else:
-        print("u might try later")  
+        print("select the type (cash,Gold,Silver, Plantation)")  
    
     # dont need to pay zakat")
        
